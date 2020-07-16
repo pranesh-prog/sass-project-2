@@ -1,0 +1,204 @@
+@import "__variable";
+@import "__default.scss";
+%transition{
+    transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+%btn{
+    letter-spacing: 1px;
+     border-radius: 20px;
+     padding: 5px 20px;
+     @extend %transition;
+}
+
+header{
+    background-color: $bg-Colour;
+    .navbar-brand{
+        img{
+            width: 200px;
+        }
+    }
+    .navbar-light{
+
+    }
+    .navbar-nav{
+        .nav-item{
+            padding-left: 15px;
+            .nav-link{
+                color: $primary-Colour;
+                @extend %btn;
+                &:hover{
+                    background-color: $secondary-Colour;
+                    color: white;
+                }
+            }
+            &:last-child{
+                .nav-link{
+                    background-color: $secondary-Colour;
+                    color: white;
+                }
+            }
+        }
+    }
+    h5{
+        color: red;
+        font-size: 16px;
+    }
+    h1{
+        color: $primary-Colour;
+        font-weight: 600;
+        font-size: 65px;
+    }
+    span{
+        color: $secondary-Colour;
+    }
+    p{
+        color: #000000ba;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+}
+
+.btn-custom{
+    color: white;
+    background-color: $secondary-Colour;
+    @extend %btn;
+    border: 2px solid $secondary-Colour;
+    &:hover{
+        background-color: transparent;
+        color: $secondary-Colour;
+    }
+}
+
+.books-section{
+    padding: 30px 0;
+    .book{
+        background-color: $bg-Colour;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        @extend %transition;
+        &:hover{
+            background-color: white;
+            box-shadow: 0 20px 40px #00000024;
+        }
+        img{
+            height: 50px;
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 15px;
+            margin-bottom: 0;
+        }
+        p{
+            color: #000000ba;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+    }
+}
+
+.heading h1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding: 40px 0;
+}
+.course-section{
+    .course{
+        border-radius: 10px;
+        padding: 10px;
+        border:0;
+        box-shadow: 0 20px 35px #00000017;
+    }
+        .card-body{
+            img{
+                border-radius: 10px;
+            }
+        }
+
+            .card-title{
+                font-size: 20px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+            .card-text{
+                color: #000000ba;
+                font-size: 15px;
+                line-height: 1.7;
+                 margin-bottom: 10px;
+            }
+            .nav{
+                margin: 10px 0;
+                align-items: center;
+                li{
+                    img{
+                        width: 20px;
+                    }
+                    span{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonial-section{
+    padding: 30px 0;
+    img{
+
+    }
+    p{
+        color: #000000ba;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+}
+
+footer{
+    background-color: #282531;
+    color: white;
+    padding: 50px 0 0;
+    .copyright{
+        text-align: center;
+        padding-top: 50px;
+        p{
+            font-size: 15px;
+            margin-bottom: 0;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: $secondary-Colour;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    }
+    p{
+
+    }
+    h6{
+        font-weight: 600;
+    }
+    ul{
+        li{
+        
+            a{
+                color: white;
+                display: block;
+                text-decoration: none;
+                font-size: 15px;
+                &:hover{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
